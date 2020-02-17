@@ -1,0 +1,417 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{titlesec}
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Jingkun Zhang}
+\newcommand{\CVTitle}{Jingkun's CV}
+\newcommand{\CVNote}{CV compiled on {\today} for Acme Corporation}
+\newcommand{\CVWebpage}{http://jkzhang7.github.io}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks, 
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+ %设置页眉
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\par
+\href{https://www.google.com/maps/place/University+of+Washington/@47.6545874,-122.307021,15.13z/data=!4m5!3m4!1s0x549014929d8535eb:0x6b742c7901b82ba3!8m2!3d47.6553351!4d-122.3035199?shorturl=1}
+{University of Washington, Seattle, WA, 98195}
+\par
+%\href{mailto:Jingkun_Zhang@163.com}
+%{Jingkun\_Zhang@163.com}
+%\,\SubBulletSymbol\,
+\href{mailto:jkzhang7@uw.edu}
+{jkzhang7@uw.edu}
+\,\SubBulletSymbol\,
+\href{mailto:jkzhang7@hotmail.com}
+{jkzhang7@hotmail.com}
+\,\SubBulletSymbol\,
++1\,(206)\,928-5253
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+
+%%%%%%%%%%%
+% Summary %%
+%%%%%%%%%%%
+
+% \Section
+% {Summary}
+% {Summary}
+% {PDF:Summary}
+
+% \Entryhttps
+% \BulletItem
+% 3 years experience of software development, robotics and machine learning.
+% \BulletItem
+% To apply for the 2020 summer software engineer intern position in the discipline of Autonomous Driving, Robotics and Computer Vision.
+% % \BulletItem
+% % To apply for the 2020 summer software engineer intern position.
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{http://www.me.washington.edu/}
+{\textbf{University of Washington, Seattle (UW)}}
+\hfill Seattle, WA, USA
+\Gap
+\BulletItem
+M.Sc in
+{Mechanical Engineering - Robotics}
+\hfill
+\DatestampYMD{2019}{09}{25} --
+\DatestampYMD{2020}{12}{15} (expected)
+\begin{Detail}
+\end{Detail}
+\BulletItem
+Core Courses: Deep Learning, Computer Vision, Database Systems, Operating System
+\BulletItem
+Research focusing on Computer Vision and Robotics, supervised by Prof. Jenq-Neng Hwang
+%\BulletItem
+%Coursera: Machine Learning, Deep Learning
+\Gap
+\href{http://en.sjtu.edu.cn/}
+{\textbf{Shanghai Jiao Tong University (SJTU)}}
+\hfill Shanghai, China
+\Gap
+\BulletItem
+B.Sc in
+\href{http://202.120.53.238/English/}
+{Power and Energy Engineering}
+\hfill
+\DatestampYMD{2014}{09}{12} --
+\DatestampYMD{2018}{06}{30}
+\begin{Detail}
+\end{Detail}
+
+
+% %%%%%%%%%%%%%%%%%%
+% %% PUBLICATIONS %%
+% %%%%%%%%%%%%%%%%%%
+
+% \Section
+% {Publications}
+% {Publications}
+% {PDF:Publications}
+
+
+% \SubSection
+% {Conferences}
+% {Conferences}
+% {PDF:Conferences}
+
+% % Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+% \begingroup
+% \renewcommand{\MaxNumberedItem}{[8888]}
+
+% \BigGap
+% \NumberedItem{[1]}
+% {Y.Wang, \underline{Jingkun Zhang}, X.Cheng and D.Zhang,
+% ``An Assistive System for Upper Limb Motion Combining
+% Functional Electrical Stimulation and Robotic Exoskeleton''
+% in \textbf{The International Functional Electrical Stimulation Society},
+% RehabWeek, Toronto, Canada,
+% \DatestampYM{2019}{06}.}
+
+
+% \endgroup
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entryhttps
+\BulletItem
+Language: Python, C/C++, Java, SQL
+\BulletItem
+Software: Matlab, Simulink, Linux, LaTex, CUDA
+\BulletItem
+Framework: OpenCV, TensorFlow, PyTorch, ROS, Pandas, Numpy, Scikit-learn
+% \BulletItem
+% Adept in Mechanical Design and Embedded System Design
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INDUSTRY EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Industry Experience}
+{Industry Experience}
+{PDF:IndustryExperience}
+
+\Entry
+\href{http://www.hyperci.com/}
+{\textbf{Hyperception Technology}}
+Robotics Software Engineer (C++)
+\hfill
+\DatestampYMD{2019}{03}{19} --
+\DatestampYMD{2019}{06}{30}
+\Gap
+
+% \begin{Detail}
+\BulletItem
+Programmed to control the chassis system of robot vacuum cleaner based on STM32
+\BulletItem
+Implemented Single Camera Simultaneous localization and mapping (ORB-SLAM) algorithm for robot vacuum cleaner's autonomous driving and developed SDK for embedded LINUX system
+% \end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SELECTED PROJECTS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Selected Projects}
+{Selected Projects}
+{PDF:SelectedProjects}
+
+\Entry
+{\textbf{Implement a Simple Database Management System}} (Java)
+\hfill
+\DatestampYMD{2020}{01}{01} --
+\DatestampYMD{2020}{03}{15}
+\Gap
+% \begin{Detail}
+\BulletItem
+Built a simple database management system called SimpleDB using Java
+% \end{Detail}
+\Gap
+{\textbf{Whale Identification – Few shot learning}} (Python)
+\hfill
+\DatestampYMD{2019}{11}{01} --
+\DatestampYMD{2019}{12}{15}
+\Gap
+% \begin{Detail}
+\BulletItem
+Implement DenseNet and Siamese Neural Network(SNN) in Pytorch to train a deep learning model to classify the whales species by flukes image 
+% \end{Detail}
+\Gap
+\Entry
+{\textbf{Pose estimation of vehicles based on a single image }} (Python)
+\hfill
+\DatestampYMD{2019}{11}{01} --
+\DatestampYMD{2019}{12}{15}
+\Gap
+% \begin{Detail}
+\BulletItem
+Extended Mask R-CNN neural network in Pytorch to train a deep learning model to detect the nearby cars and predict the pose in 6 degrees of freedom (Translation and Rotation) of vehicles in a single image from the Baidu's autonomous driving dataset
+% \end{Detail}
+\Gap
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+
+\Entry
+{\textbf{Visual Odometry and Mapping on Monocular Vision Drone}} (C++)
+\hfill UW
+\Gap
+% \begin{Detail}
+\BulletItem
+Deployed semidirect visual odometry (SVO) algorithm and multi-view stereo algorithm to estimate depth map for monocular vision drone
+
+% \end{Detail}
+
+\Gap
+
+
+
+
+\Entry
+{\textbf{Control on a Novel Pick-and-place Robot}} (Matlab)
+%(Research Assistant)
+\hfill McGill University
+% \Gap
+% Advisor: Prof. Jorge Angeles, Centre for Intelligent Machines
+% \hfill
+% \DatestampYMD{2018}{07}{15} --
+% \DatestampYMD{2018}{11}{30}
+
+\Gap
+% \begin{Detail}
+\BulletItem
+Literature review about the schönies motion generator (SMG) and pick-and-place robot
+\BulletItem
+Improved the control scheme by applying Linear–quadratic regulator controller (LQR)  and Extended Kalman Filter (EKF) to reduce trajectory-planning errors
+\BulletItem
+Conducted the simulation and the practical experiments to verify the control scheme
+% \end{Detail}
+
+\Gap
+{\textbf{Assistive System for Upper Limb Motion, Combining Functional Electrical Stimulation and Robotic Exoskeleton}} (C)
+%(Research Assistant)
+\hfill SJTU
+% \Gap
+% Advisor: Prof. Dingguo Zhang, School of Mechanical Engineering
+% \hfill
+% \DatestampYMD{2017}{12}{15} --
+% \DatestampYMD{2018}{05}{15}
+
+\Gap
+% \begin{Detail}
+\BulletItem
+Designed an embedded system for robotics glove’s control based on STM32 32-bit Arm Cortex MCU
+\BulletItem
+Programmed to control movement for human’s wrist joint, elbow joint and shoulder joint by Functional Electrical Stimulation and robotics exoskeleton
+\BulletItem
+Integrated the system for upper limb motion with 7 degrees of freedom and tested by conducting grabbing  experiments
+% \end{Detail}
+
+\Gap
+% {\textbf{Energy Harvesting Device}
+% %(Research Assistant)
+% \hfill UW-Madison
+% % \Gap
+% % Advisor: Prof. Tom Krupenkin, Department of Mechanical Engineering
+% % \hfill
+% % \DatestampYMD{2017}{06}{15} --
+% \DatestampYMD{2017}{09}{15}
+
+% \Gap
+% \begin{Detail}
+% \BulletItem
+% Designed and manufactured a system of energy harvesting that can transfer mechanical energy to electric energy in human locomotion, which has a much higher energy conversion rate
+% \BulletItem
+% Built the actual experimental setup including LabView programming and measured the conversion rate
+% \BulletItem
+% Improved the design by changing the structure of locomotive part
+% \end{Detail}
+
+
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+
+\SubSection
+{Conferences}
+{Conferences}
+{PDF:Conferences}
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+\begingroup
+\renewcommand{\MaxNumberedItem}{[8888]}
+
+\BigGap
+\NumberedItem{[1]}
+{Y.Wang, \underline{Jingkun Zhang}, X.Cheng and D.Zhang,
+``An Assistive System for Upper Limb Motion Combining
+Functional Electrical Stimulation and Robotic Exoskeleton''
+in \textbf{The International Functional Electrical Stimulation Society},
+RehabWeek, Toronto, Canada,
+\DatestampYM{2019}{06}.}
+\endgroup
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%
+% %% SELECTED PROJECTS %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \Section
+% {Selected Projects}
+% {Selected Projects}
+% {PDF:SelectedProjects}
+
+% \Entry
+% {\textbf{Whale species classifier by flukes image}} Kaggle Competition
+% \hfill
+% \DatestampYMD{2019}{11}{01} --
+% \DatestampYMD{2019}{12}{15}
+% \Gap
+% \begin{Detail}
+% \BulletItem
+% Implement ResNet neural network in Pytorch to train a deep learning model to classify the whales species by flukes iamge 
+% \end{Detail}
+% \Gap
+% \Entry
+% {\textbf{Pose estimattion of vehicles based on a single image }} Kaggle Competition
+% \hfill
+% \DatestampYMD{2019}{11}{01} --
+% \DatestampYMD{2019}{12}{15}
+% \Gap
+% \begin{Detail}
+% \BulletItem
+% Implement Mask R-CNN neural network in Pytorch to train a deep learning model to predict the pose in 6 degrees of freedom of vehicles in a single image
+% \end{Detail}
+% \Gap
+
+
+
+\end{document}
